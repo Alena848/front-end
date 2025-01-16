@@ -1,0 +1,98 @@
+/* This is comment in CSS*/
+header { border: 1px solid red; }
+
+main { border: 1px solid green; }
+
+footer { border: 1px solid purple; }
+
+/* ul li {
+    background: yellow;
+}
+
+header ul li {
+    background: blue;
+} */
+
+
+
+/* header ul li,
+ul li ,
+.main-content {
+    background: blue;
+    border: 1px solid red;
+} */
+
+
+/* main ul li {
+    background: red;
+} */
+
+
+/* .main-content .list-in-main li {
+    border: 2px solid blue;
+} */
+
+/* DRY Code; Do Not Repeat Yorself */
+
+body {
+    font-family: "Plus Jakarta Sans", serif;
+    color: #000000;
+}
+
+/* nav {
+    border: 1px solid purple;
+} */
+
+nav ul {
+    padding: 0;
+}
+
+header {
+    display: flex;  /*makes elements flexbox*/
+    flex-direction: row;  /*puts elements in horizontal row*/
+    justify-content: space-between;  /*moves children */
+    align-items: center;  /*centers chicdren */
+    padding: 60px 120px;
+}
+    header nav ul li {
+        display: inline;
+        padding: 0 40px;
+}
+
+.logo {
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+header button {
+    background: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+
+header {
+    background: lightblue;
+}
+
+.banner-img {
+    width: 100%;
+    max-width: 1024px;
+}
+
+.banner img {
+    border: 2px solid green;
+}
+
+@media (max-width: 940px) {
+
+    header { background: #00e8ff; }
+
+    header nav ul li {
+        display: block;
+        }
+
+    header {
+        padding: 20px 24 px;
+    }
+}
